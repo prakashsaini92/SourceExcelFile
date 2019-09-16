@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background: #efefef;
+}
+.MainContent {
+  background: #fff;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 4px;
+  border: 1px solid #dedddd;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 85vh;
+  max-height: 600px;
+}.Errors {
+  right: 0px;
+  top: 31px;
+  position: absolute;
+}.Errors span {
+  background: red;
+  color: #fff;
+  padding: 7px;
+  margin: 28px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.inputWidgets input {
+  width: 170px;
+  height: 41px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.inputWidgets input:before {
+  content: "Upload File";
+  position: absolute;
+  left: 0;
+  color: #b57f15;
+  z-index: 99;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 12px 13px;
+}
+
+.inputWidgets input:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url(./upload.png) #f9c04f;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-size: 31px;
+  background-repeat: no-repeat;
+  background-position: 130px 5px;
+
+}.Filename {
+  float: left;
+  width: 100%;
+  background: #f9c04f;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+
+  border-radius: 9px 9px 0 0;
+}
+.Filename span{  padding: 6px 0;    display: block; }
+.DisplayData {
+  float: left;
+  width: 100%;
+  overflow: auto; 
+  max-height: 67vh;
+  background: #ffffff;
+  border: 1px solid #f9c04f;
+}table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table.xslxData tr td:first-child {
+  display: none;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}table.xslxData th {
+  background: #e6a82e;
+  border-color: #ad7811;
+  color: #fff;
+  
+}.MainContent h2 {
+  text-align: center;
+  color: #f9c04f;
+  text-decoration: underline;
+}
